@@ -35,6 +35,13 @@ vim.lsp.config('harper_ls', {
   },
 })
 
+vim.lsp.config('tinymist', {
+  root_markers = { 'main.typ', 'typst.toml', '.git' },
+  settings = {
+    typstExtraArgs = { "main.typ" }
+  }
+})
+
 -- Native 0.12 Server Enablement
 vim.lsp.enable({
   "bashls",
